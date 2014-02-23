@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrapcode</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= yield :stylesheet_includes %>
+
+
+
+  <%= javascript_include_tag "application" %>
+  <%= yield :javascript_includes %>
+
+
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
